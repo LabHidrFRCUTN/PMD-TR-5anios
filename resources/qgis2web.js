@@ -1,5 +1,4 @@
 
-
 var measuring = false;
 var measureControl = (function (Control) {
     measureControl = function(opt_options) {
@@ -62,7 +61,7 @@ var expandedAttribution = new ol.control.Attribution({
 
 var map = new ol.Map({
     controls: ol.control.defaults({attribution:false}).extend([
-        expandedAttribution,new measureControl()
+        expandedAttribution,new measureControl(),new ol.control.FullScreen()
     ]),
     target: document.getElementById('map'),
     renderer: 'canvas',

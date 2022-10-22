@@ -17,8 +17,8 @@ var style_IsohietasPMD5aos_4 = function(feature, resolution){
     var offsetX = 8;
     var offsetY = 3;
     var placement = 'line';
-    if (feature.get("q2wHide_ELEV") !== null) {
-        labelText = String(feature.get("q2wHide_ELEV"));
+    if (feature.get("ELEV") !== null) {
+        labelText = String(feature.get("ELEV"));
     }
     var style = [ new ol.style.Style({
         stroke: new ol.style.Stroke({color: 'rgba(0,46,255,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 1}),
